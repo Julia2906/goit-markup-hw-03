@@ -59,11 +59,22 @@ img{
     align-items: center;
 }
 
-.header-nav{
-    display: flex;
+.page-header{
+    border-bottom: 1px solid var(--portfolio-button);
+    background: var(--background-color-white);
 }
 
-.auth-nav, .site-nav{
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.auth-nav{
+    display: flex;
+    gap: 40px;
+}
+
+.site-nav{
     display: flex;
     gap: 40px;
 }
@@ -144,6 +155,7 @@ img{
 }
 
 .hero-button {
+    display: block;
     padding: 16px 32px;
     border-radius: 4px;
     min-width: 169px;
@@ -167,6 +179,7 @@ img{
 
 .hero-title {
     margin-bottom: 48px;
+    max-width: 496px;
 
     color: var(--background-color-white);
     font-size: 56px;
@@ -186,6 +199,20 @@ img{
 }
 
 /*=================== Features ===================== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
 .features {
     padding-bottom: 0;
 }
@@ -246,7 +273,9 @@ img{
 }
 
 .team-item{
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--background-color-white);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -274,10 +303,7 @@ img{
 /* ===================== Footer ========================*/
 
 /* ===================== Portfolio ==================== */
-.portfolio-header{
-    border-bottom: 1px solid var(--portfolio-button);
-    background: var(--background-color-white);
-}
+
 .portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -306,6 +332,7 @@ img{
 
 .portfolio-buttons:hover,
 .portfolio-buttons:focus{
+    border: 1px solid transparent;
     background-color: var(--active-button);
     color: var(--background-color-white);
     cursor: pointer;
@@ -334,6 +361,7 @@ img{
 }
 
 .portfolio-item-container{
+    border-top: none;
     padding: 32px 16px;
     border: 1px solid var(--portfolio-button);
 }
