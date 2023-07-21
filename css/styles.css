@@ -11,6 +11,22 @@
 
 
 }
+/* =========== COMMON ========== */
+
+/* *,
+*::before,
+*::after{
+    box-sizing: inherit;
+} */
+
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: var(--global-font);
@@ -21,8 +37,41 @@ body {
     letter-spacing: 0.72px;
 }
 
-/* Header */
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto ;
+    padding: 0 15px;
+ }   
+
+.section {
+    padding: 120px 0;
+}
+/* ============Header============== */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+}
+
+.auth-nav, .site-nav{
+    display: flex;
+    gap: 40px;
+}
+
 .link {
+    display: inline-block;
+    padding: 24px 0;
+
     text-decoration: none;
     color: var(--second-text-color);
     font-size: 16px;
@@ -56,15 +105,20 @@ body {
 
 .list {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
 }
 
 .address {
     font-style: normal;
 }
-/* Header */
+/* ============Header=============*/
 
-/* Logo */
+/* =============Logo=============== */
 .logo {
+    margin-right: 76px;
+    padding: 24px 0;
+
     font-family: var(--second-font);
     color: var(--global-color-blue) ;
     font-size: 18px;
@@ -77,15 +131,24 @@ body {
 .studio {
     color: var(--second-text-color);
 }
-/* Logo */
 
 
-/* Hero */
+/* ===============Logo============ */
+
+
+/* ==================== Hero ===================== */
 .hero {
     background-color: var(--second-text-color);
+    text-align: center;
+    padding: 188px 0;
 }
 
 .hero-button {
+    padding: 16px 32px;
+    border-radius: 4px;
+    min-width: 169px;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     font-family: inherit;
     background-color: var(--global-color-blue);
     color: var(--background-color-white);
@@ -94,6 +157,7 @@ body {
     letter-spacing: 0.64px;
     font-weight: 500;
     cursor: pointer;
+    border: none;
 }
 
 .hero-button:hover,
@@ -102,13 +166,14 @@ body {
 }
 
 .hero-title {
+    margin-bottom: 48px;
+
     color: var(--background-color-white);
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 1.12px;
-    text-align: center;
 }
-/* Hero */
+/* ===================== Hero =======================*/
 
 .features-title, .products-title, .team-title{
     color: var(--second-text-color);
@@ -117,11 +182,18 @@ body {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
 }
 
-/* Features */
+/*=================== Features ===================== */
+.features {
+    padding-bottom: 0;
+}
+
 
 .features .title {
+    margin-bottom: 8px;
+
     color: var(--second-text-color);
     font-size: 20px;
     line-height: 1.2;
@@ -135,9 +207,24 @@ body {
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
-/* Features */
 
-/* Team */
+.features-item{
+    max-width: 264px;
+    flex-direction: column;
+}
+/* ================ Features =========================*/
+
+
+/* ===================== Products ===================== */
+
+/* ====================== Products ==================== */
+/* ==================== Team ==========================*/
+
+.team-container {
+    padding: 32px 0;
+    text-align: center;
+}
+
 .team {
     background-color: var(--background-clor-grey);
 }
@@ -148,6 +235,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.4px;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 
 .team-position{
@@ -160,14 +248,20 @@ body {
 .team-item{
     background-color: var(--background-color-white);
 }
-/* Team */
 
-/* Footer */
+
+/* ======================Team ========================*/
+
+/*===================== Footer========================= */
 .footer {
+    padding-top: 100px ;
+    padding-bottom: 100px;
+
     background-color: var(--second-text-color);
 }
 
 .footer-text{
+    width: 264px;
     color: var(--background-clor-grey);
     font-size: 16px;
     line-height: 1.5;
@@ -177,11 +271,30 @@ body {
 .footer .studio {
     color: var(--background-clor-grey);
 }
-/* Footer */
+/* ===================== Footer ========================*/
 
-/* Portfolio */
+/* ===================== Portfolio ==================== */
+.portfolio-header{
+    border-bottom: 1px solid var(--portfolio-button);
+    background: var(--background-color-white);
+}
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
+.btn-menu{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
 .portfolio-buttons{
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower, #E7E9FC);;
+
+
     background-color: var(--background-clor-grey);
     color: var(--global-color-blue);
     font-size: 16px;
@@ -198,12 +311,19 @@ body {
     cursor: pointer;
 }
 
+.portfolio-list{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px 24px;
+}
+
 .portfolio-title{
     color: var(--second-text-color);
     font-size: 20px;
     line-height: 1.2; 
     letter-spacing: 0.4px;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -213,4 +333,8 @@ body {
     letter-spacing: 0.32px;
 }
 
-/* Portfolio */
+.portfolio-item-container{
+    padding: 32px 16px;
+    border: 1px solid var(--portfolio-button);
+}
+/* ===================== Portfolio =================== */
