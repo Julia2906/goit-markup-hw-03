@@ -9,22 +9,6 @@
   --active-button: #404bbf;
   --portfolio-button: #e7e9fc;
 }
-/* =========== COMMON ========== */
-
-/* *,
-*::before,
-*::after{
-    box-sizing: inherit;
-} */
-
-h1,h2,h3,h4,p{
-    margin: 0;
-}
-
-ul,ol{
-    margin: 0;
-    padding: 0;
-}
 
 body {
   font-family: var(--global-font);
@@ -35,65 +19,13 @@ body {
   letter-spacing: 0.72px;
 }
 
-img{
-    display: block;
-    max-width: 100%;
-}
-
-.container {
-    max-width: 1158px;
-    margin: 0 auto ;
-    padding: 0 15px;
- }   
-
-.section {
-    padding: 120px 0;
-}
-/* ============Header============== */
-
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.page-header{
-    border-bottom: 1px solid var(--portfolio-button);
-    background: var(--background-color-white);
-}
-
-.header-nav{
-    display: flex;
-    align-items: center;
-}
-
-.auth-nav{
-    display: flex;
-    gap: 40px;
-}
-
-.site-nav{
-    display: flex;
-    gap: 40px;
-}
-
+/* Header */
 .link {
-<<<<<<< HEAD
   text-decoration: none;
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-=======
-    display: inline-block;
-    padding: 24px 0;
-
-    text-decoration: none;
-    color: var(--second-text-color);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
 
 .site-nav .link {
@@ -129,11 +61,10 @@ img{
 .address {
   font-style: normal;
 }
-/* ============Header=============*/
+/* Header */
 
-/* =============Logo=============== */
+/* Logo */
 .logo {
-<<<<<<< HEAD
   font-family: var(--second-font);
   color: var(--global-color-blue);
   font-size: 18px;
@@ -141,25 +72,13 @@ img{
   letter-spacing: 0.54px;
   font-weight: 800;
   text-transform: uppercase;
-=======
-    margin-right: 76px;
-    padding: 24px 0;
-
-    font-family: var(--second-font);
-    color: var(--global-color-blue) ;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.54px;
-    font-weight: 800;
-    text-transform: uppercase;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
 
 .studio {
   color: var(--second-text-color);
 }
+/* Logo */
 
-<<<<<<< HEAD
 /* Hero */
 .hero {
   background-color: var(--second-text-color);
@@ -175,35 +94,6 @@ img{
   letter-spacing: 0.64px;
   font-weight: 500;
   cursor: pointer;
-=======
-
-/* ===============Logo============ */
-
-
-/* ==================== Hero ===================== */
-.hero {
-    background-color: var(--second-text-color);
-    text-align: center;
-    padding: 188px 0;
-}
-
-.hero-button {
-    display: block;
-    padding: 16px 32px;
-    border-radius: 4px;
-    min-width: 169px;
-
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    font-family: inherit;
-    background-color: var(--global-color-blue);
-    color: var(--background-color-white);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
 
 .hero-button:hover,
@@ -212,7 +102,6 @@ img{
 }
 
 .hero-title {
-<<<<<<< HEAD
   margin-top: 0;
   margin-bottom: 60px;
   color: var(--background-color-white);
@@ -220,19 +109,9 @@ img{
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
-=======
-    margin-bottom: 48px;
-    max-width: 496px;
-
-    color: var(--background-color-white);
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
-/* ===================== Hero =======================*/
+/* Hero */
 
-<<<<<<< HEAD
 .features-title,
 .products-title,
 .team-title {
@@ -242,55 +121,17 @@ img{
   letter-spacing: 0.72px;
   text-transform: capitalize;
   text-align: center;
-=======
-.features-title, .products-title, .team-title{
-    color: var(--second-text-color);
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 72px;
 }
 
-/*=================== Features ===================== */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-.features {
-    padding-bottom: 0;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
-}
-
+/* Features */
 
 .features .title {
-<<<<<<< HEAD
   margin: 0;
   color: var(--second-text-color);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   font-weight: 500;
-=======
-    margin-bottom: 8px;
-
-    color: var(--second-text-color);
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    font-weight: 500;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
 
 .features-description {
@@ -299,50 +140,19 @@ img{
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.features-list{
-    display: flex;
-    gap: 24px;
-}
+/* Features */
 
-.features-item{
-    max-width: 264px;
-    flex-direction: column;
-    
-
-}
-/* ================ Features =========================*/
-
-
-/* ===================== Products ===================== */
-
-/* ====================== Products ==================== */
-/* ==================== Team ==========================*/
-
-.team-container {
-    padding: 32px 0;
-    text-align: center;
-}
-
+/* Team */
 .team {
   background-color: var(--background-clor-grey);
 }
 
-<<<<<<< HEAD
 .team-name {
   color: var(--second-text-color);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.4px;
   font-weight: 500;
-=======
-.team-name{
-    color: var(--second-text-color);
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-    font-weight: 500;
-    margin-bottom: 8px;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
 
 .team-position {
@@ -352,23 +162,13 @@ img{
   letter-spacing: 0.32px;
 }
 
-<<<<<<< HEAD
 .team-item {
   background-color: var(--background-color-white);
-=======
-.team-item{
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--background-color-white);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
+/* Team */
 
-
-/* ======================Team ========================*/
-
-/*===================== Footer========================= */
+/* Footer */
 .footer {
-<<<<<<< HEAD
   background-color: var(--second-text-color);
 }
 
@@ -377,30 +177,15 @@ img{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-=======
-    padding-top: 100px ;
-    padding-bottom: 100px;
-
-    background-color: var(--second-text-color);
-}
-
-.footer-text{
-    width: 264px;
-    color: var(--background-clor-grey);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
 
 .footer .studio {
   color: var(--background-clor-grey);
 }
-/* ===================== Footer ========================*/
+/* Footer */
 
-/* ===================== Portfolio ==================== */
+/* Portfolio */
 
-<<<<<<< HEAD
 .portfolio-buttons {
   background-color: var(--background-clor-grey);
   color: var(--global-color-blue);
@@ -424,55 +209,6 @@ img{
   line-height: 1.2;
   letter-spacing: 0.4px;
   font-weight: 500;
-=======
-.portfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
-}
-
-.btn-menu{
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 72px;
-}
-.portfolio-buttons{
-    padding: 12px 24px;
-    border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);;
-
-
-    background-color: var(--background-clor-grey);
-    color: var(--global-color-blue);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    font-family: var(--global-font);
-    font-weight: 500;
-}
-
-.portfolio-buttons:hover,
-.portfolio-buttons:focus{
-    border: 1px solid transparent;
-    background-color: var(--active-button);
-    color: var(--background-color-white);
-    cursor: pointer;
-}
-
-.portfolio-list{
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0px 24px;
-}
-
-.portfolio-title{
-    color: var(--second-text-color);
-    font-size: 20px;
-    line-height: 1.2; 
-    letter-spacing: 0.4px;
-    font-weight: 500;
-    margin-bottom: 8px;
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
 }
 
 .portfolio-text {
@@ -482,13 +218,4 @@ img{
   letter-spacing: 0.32px;
 }
 
-<<<<<<< HEAD
 /* Portfolio */
-=======
-.portfolio-item-container{
-    border-top: none;
-    padding: 32px 16px;
-    border: 1px solid var(--portfolio-button);
-}
-/* ===================== Portfolio =================== */
->>>>>>> f391edebc958a9bebc08238640df40f7f77c3bc9
