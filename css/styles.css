@@ -116,8 +116,6 @@ img{
 
 .list {
     list-style-type: none;
-    display: flex;
-    gap: 24px;
 }
 
 .address {
@@ -234,10 +232,16 @@ img{
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
+.features-list{
+    display: flex;
+    gap: 24px;
+}
 
 .features-item{
     max-width: 264px;
     flex-direction: column;
+    
+
 }
 /* ================ Features =========================*/
 
