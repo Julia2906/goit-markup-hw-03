@@ -215,7 +215,6 @@ img {
 
 .features {
   padding: 120px 0;
-  padding-bottom: 0;
 }
 
 .features .title {
@@ -246,6 +245,10 @@ img {
 /* ================ Features =========================*/
 
 /* ===================== Products ===================== */
+.products {
+  padding-top: 0;
+  padding-bottom: 120px;
+}
 
 .products-list {
   display: flex;
