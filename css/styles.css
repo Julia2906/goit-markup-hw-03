@@ -148,7 +148,6 @@ img{
 /* ==================== Hero ===================== */
 .hero {
     background-color: var(--second-text-color);
-    text-align: center;
     padding: 188px 0;
 }
 
@@ -248,6 +247,11 @@ img{
 
 /* ===================== Products ===================== */
 
+.products-list{
+    display: flex;
+    gap: 24px;
+}
+
 /* ====================== Products ==================== */
 /* ==================== Team ==========================*/
 
@@ -282,6 +286,10 @@ img{
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.team-list{
+    display: flex;
+    gap: 24px;
+}
 
 /* ======================Team ========================*/
 
@@ -294,7 +302,9 @@ img{
 }
 
 .footer-text{
+    margin-top: 16px;
     width: 264px;
+
     color: var(--background-clor-grey);
     font-size: 16px;
     line-height: 1.5;
@@ -304,6 +314,7 @@ img{
 .footer .studio {
     color: var(--background-clor-grey);
 }
+
 /* ===================== Footer ========================*/
 
 /* ===================== Portfolio ==================== */
@@ -343,6 +354,7 @@ img{
 }
 
 .portfolio-list{
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0px 24px;
