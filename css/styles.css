@@ -214,7 +214,7 @@ img {
 }
 
 .features {
-  padding: 120px 0;
+  padding: 120px 0 0 0;
 }
 
 .features .title {
@@ -245,9 +245,11 @@ img {
 /* ================ Features =========================*/
 
 /* ===================== Products ===================== */
+/* .products .section {
+  padding: 0;
+} */
 .products {
-  padding-top: 0;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .products-list {
