@@ -212,10 +212,10 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+/* 
 .features {
-  padding: 120px 0;
-}
+  padding: 120px 0 120px;
+} */
 
 .features .title {
   margin-bottom: 8px;
